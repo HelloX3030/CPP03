@@ -3,12 +3,12 @@
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
-#define YELLOW "\033[33m"
+#define DIAMOND_TRAP_COLOR "\033[33m"
 
 class DiamondTrap : public FragTrap, public ScavTrap
 {
 private:
-	std::string name; // same variable name as in ClapTrap
+	std::string name;
 
 public:
 	DiamondTrap();
@@ -17,5 +17,5 @@ public:
 	DiamondTrap(const DiamondTrap &other);
 	DiamondTrap &operator=(const DiamondTrap &other);
 
-	void whoAmI(); // new function to show names
+	void whoAmI();
 };

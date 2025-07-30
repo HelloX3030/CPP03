@@ -2,7 +2,7 @@
 
 #include "ClapTrap.hpp"
 
-#define CYAN "\033[36m"
+#define SCAV_TRAP_COLOR "\033[36m"
 
 class ScavTrap : public ClapTrap
 {
