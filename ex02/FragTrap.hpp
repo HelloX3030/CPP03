@@ -2,7 +2,7 @@
 
 #include "ClapTrap.hpp"
 
-#define CYAN "\033[36m"
+#define FRAG_TRAP_COLOR "\033[32m"
 
 class FragTrap : public ClapTrap
 {
