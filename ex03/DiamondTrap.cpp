@@ -6,10 +6,9 @@
 DiamondTrap::DiamondTrap()
 	: ClapTrap("default_clap_name"), FragTrap(), ScavTrap(), name("default_name")
 {
-	// Initialize stats from FragTrap and ScavTrap as desired
-	hit_points = FragTrap::hit_points;		 // Usually 100
-	energy_points = ScavTrap::energy_points; // Usually 50
-	attack_damage = FragTrap::attack_damage; // Usually 30
+	hit_points = FragTrap::hit_points;
+	energy_points = ScavTrap::energy_points;
+	attack_damage = FragTrap::attack_damage;
 
 	std::cout << DIAMOND_TRAP_COLOR << "DiamondTrap default constructor called for " << name << RESET << std::endl;
 }

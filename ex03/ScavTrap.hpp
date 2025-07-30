@@ -4,7 +4,7 @@
 
 #define SCAV_TRAP_COLOR "\033[36m"
 
-class ScavTrap : public ClapTrap
+class ScavTrap : virtual public ClapTrap
 {
 private:
 public:

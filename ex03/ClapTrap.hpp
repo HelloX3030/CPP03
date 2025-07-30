@@ -7,7 +7,7 @@
 
 class ClapTrap
 {
-private:
+protected:
 	std::string name;
 	unsigned int hit_points;
 	unsigned int energy_points;
@@ -28,13 +28,4 @@ public:
 
 	// Getters
 	std::string get_name() const;
-	unsigned int get_hit_points() const;
-	unsigned int get_energy_points() const;
-	unsigned int get_attack_damage() const;
-
-	// Setters
-	void set_name(const std::string &new_name);
-	void set_hit_points(unsigned int hp);
-	void set_energy_points(unsigned int ep);
-	void set_attack_damage(unsigned int ad);
 };

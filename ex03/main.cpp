@@ -1,22 +1,29 @@
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 #include <iostream>
 
-int main(void)
+int main()
 {
-	FragTrap bot1 = FragTrap("Bot1");
-	bot1.attack("Dummy1");
-	bot1.takeDamage(20);
-	bot1.beRepaired(14);
-	bot1.attack("Dummy1");
-	FragTrap bot2 = FragTrap("Bot2");
-	bot2.beRepaired(5);
-	bot2.takeDamage(3);
-	for (int i = 0; i < 12; i++)
-		bot2.attack("Dummy2");
-	bot2.beRepaired(10);
+	DiamondTrap dt1("Diamond1");
+	dt1.attack("Target1");
+	dt1.takeDamage(25);
+	dt1.beRepaired(10);
+	dt1.attack("Target1");
+
+	DiamondTrap dt2("Diamond2");
+	dt2.beRepaired(7);
+	dt2.takeDamage(5);
+	for (int i = 0; i < 10; i++)
+		dt2.attack("Target2");
+	dt2.beRepaired(15);
+
 	std::cout << "========================================================================" << std::endl;
-	FragTrap bot3 = FragTrap("Bot3");
-	bot3.highFivesGuys();
-	bot3 = bot2;
-	bot3.attack("Dummy3");
+
+	DiamondTrap dt3("Diamond3");
+	dt3.highFivesGuys();
+	dt3.guardGate();
+	dt3.whoAmI();
+	dt3 = dt2;
+	dt3.attack("Target3");
+
+	return 0;
 }

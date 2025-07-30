@@ -4,7 +4,7 @@
 
 #define FRAG_TRAP_COLOR "\033[32m"
 
-class FragTrap : public ClapTrap
+class FragTrap : virtual public ClapTrap
 {
 private:
 public:
