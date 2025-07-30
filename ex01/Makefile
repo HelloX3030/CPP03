@@ -13,7 +13,7 @@ vpath %.cpp src/
 H_FILES := ClapTrap.hpp
 
 # .cpp source files
-SRC_FILES := main.cpp ClapTrap.cpp
+SRC_FILES := main.cpp ClapTrap.cpp ScavTrap.cpp
 
 # Object directory and object files
 OBJ_DIR := obj

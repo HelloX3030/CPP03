@@ -13,14 +13,19 @@ ClapTrap::ClapTrap(std::string name)
 	std::cout << CLAP_TRAP_COLOR << "ClapTrap constructor called for '" << name << "'." << RESET << std::endl;
 }
 
+ClapTrap::ClapTrap(std::string name, unsigned int hit_points, unsigned int energy_points, unsigned int attack_damage)
+	: name(name), hit_points(hit_points), energy_points(energy_points), attack_damage(attack_damage)
+{
+	std::cout << CLAP_TRAP_COLOR << "ClapTrap constructor called for '" << name << "' HP " << hit_points << " EP " << energy_points << " AD " << attack_damage << "." << RESET << std::endl;
+}
+
 ClapTrap::~ClapTrap()
 {
 	std::cout << CLAP_TRAP_COLOR << "ClapTrap destructor called for '" << name << "'." << RESET << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &other)
-	: name(other.name), hit_points(other.hit_points),
-	  energy_points(other.energy_points), attack_damage(other.attack_damage)
+	: name(other.name), hit_points(other.hit_points), energy_points(other.energy_points), attack_damage(other.attack_damage)
 {
 	std::cout << CLAP_TRAP_COLOR << "ClapTrap copy constructor called. Cloned from '" << other.name << "'." << RESET << std::endl;
 }
@@ -36,6 +41,11 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 		attack_damage = other.attack_damage;
 	}
 	return *this;
+}
+
+std::string ClapTrap::get_name() const
+{
+	return name;
 }
 
 void ClapTrap::attack(const std::string &target)
