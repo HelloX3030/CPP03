@@ -43,11 +43,6 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 	return *this;
 }
 
-std::string ClapTrap::get_name() const
-{
-	return name;
-}
-
 void ClapTrap::attack(const std::string &target)
 {
 	if (hit_points == 0)
@@ -100,4 +95,46 @@ void ClapTrap::beRepaired(unsigned int amount)
 	hit_points += amount;
 	std::cout << CLAP_TRAP_COLOR << "ClapTrap '" << name << "' repaired itself for " << amount
 			  << " HP. Total HP: " << hit_points << ", EP left: " << energy_points << RESET << std::endl;
+}
+
+// Getters
+std::string ClapTrap::get_name() const
+{
+	return name;
+}
+
+unsigned int ClapTrap::get_hit_points() const
+{
+	return hit_points;
+}
+
+unsigned int ClapTrap::get_energy_points() const
+{
+	return energy_points;
+}
+
+unsigned int ClapTrap::get_attack_damage() const
+{
+	return attack_damage;
+}
+
+// Setters
+void ClapTrap::set_name(const std::string &new_name)
+{
+	name = new_name;
+}
+
+void ClapTrap::set_hit_points(unsigned int hp)
+{
+	hit_points = hp;
+}
+
+void ClapTrap::set_energy_points(unsigned int ep)
+{
+	energy_points = ep;
+}
+
+void ClapTrap::set_attack_damage(unsigned int ad)
+{
+	attack_damage = ad;
 }

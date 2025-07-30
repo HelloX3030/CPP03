@@ -21,8 +21,20 @@ public:
 	ClapTrap(const ClapTrap &other);
 	ClapTrap &operator=(const ClapTrap &other);
 
-	std::string get_name() const;
+	// Existing functions
 	void attack(const std::string &target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
+
+	// Getters
+	std::string get_name() const;
+	unsigned int get_hit_points() const;
+	unsigned int get_energy_points() const;
+	unsigned int get_attack_damage() const;
+
+	// Setters
+	void set_name(const std::string &new_name);
+	void set_hit_points(unsigned int hp);
+	void set_energy_points(unsigned int ep);
+	void set_attack_damage(unsigned int ad);
 };

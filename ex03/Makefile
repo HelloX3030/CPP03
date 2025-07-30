@@ -10,10 +10,10 @@ vpath %.hpp include/
 vpath %.cpp src/
 
 # .h and .hpp files
-H_FILES := ClapTrap.hpp FragTrap.hpp ScavTrap.hpp
+H_FILES := ClapTrap.hpp FragTrap.hpp ScavTrap.hpp DiamondTrap.hpp
 
 # .cpp source files
-SRC_FILES := main.cpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp
+SRC_FILES := main.cpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp DiamondTrap.cpp
 
 # Object directory and object files
 OBJ_DIR := obj
