@@ -2,6 +2,9 @@
 
 #include <string>
 
+#define RESET "\033[0m"
+#define CLAP_TRAP_COLOR "\033[35m"
+
 class ClapTrap
 {
 private:
