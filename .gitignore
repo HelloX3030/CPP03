@@ -43,3 +43,4 @@
 # Custom Adds
 *.pdf
 *.out
+/obj/
