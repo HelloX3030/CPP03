@@ -1,7 +1,7 @@
 # Compiler and flags
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
-NAME := Fixed00
+NAME := a.out
 
 # vpath for header files
 vpath %.hpp include/
@@ -10,10 +10,10 @@ vpath %.hpp include/
 vpath %.cpp src/
 
 # .h and .hpp files
-H_FILES := Fixed.hpp
+H_FILES := ClapTrap.hpp
 
 # .cpp source files
-SRC_FILES := main.cpp Fixed.cpp
+SRC_FILES := main.cpp ClapTrap.cpp
 
 # Object directory and object files
 OBJ_DIR := obj
