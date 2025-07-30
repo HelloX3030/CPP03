@@ -5,13 +5,13 @@
 #define GREEN "\033[32m"
 
 FragTrap::FragTrap()
-	: ClapTrap("default_name", 100, 50, 20)
+	: ClapTrap("default_name", 100, 100, 30)
 {
 	std::cout << GREEN << "FragTrap default constructor called. Initialized 'default_name' with 100 HP, 50 EP, and 20 AD." << RESET << std::endl;
 }
 
 FragTrap::FragTrap(std::string name)
-	: ClapTrap(name, 100, 50, 20)
+	: ClapTrap(name, 100, 10, 30)
 {
 	std::cout << GREEN << "FragTrap constructor called for '" << name << "'." << RESET << std::endl;
 }
