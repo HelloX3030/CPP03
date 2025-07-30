@@ -10,7 +10,7 @@ vpath %.hpp include/
 vpath %.cpp src/
 
 # .h and .hpp files
-H_FILES := ClapTrap.hpp
+H_FILES := ClapTrap.hpp FragTrap.hpp
 
 # .cpp source files
 SRC_FILES := main.cpp ClapTrap.cpp FragTrap.cpp
