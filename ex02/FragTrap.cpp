@@ -8,7 +8,7 @@ FragTrap::FragTrap()
 }
 
 FragTrap::FragTrap(std::string name)
-	: ClapTrap(name, 100, 10, 30)
+	: ClapTrap(name, 100, 100, 30)
 {
 	std::cout << FRAG_TRAP_COLOR << "FragTrap constructor called for '" << name << "'." << RESET << std::endl;
 }
