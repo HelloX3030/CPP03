@@ -4,7 +4,7 @@
 FragTrap::FragTrap()
 	: ClapTrap("default_name", 100, 100, 30)
 {
-	std::cout << FRAG_TRAP_COLOR << "FragTrap default constructor called. Initialized 'default_name' with 100 HP, 50 EP, and 20 AD." << RESET << std::endl;
+	std::cout << FRAG_TRAP_COLOR << "FragTrap default constructor called. Initialized 'default_name' with 100 HP, 100 EP, and 30 AD." << RESET << std::endl;
 }
 
 FragTrap::FragTrap(std::string name)
