@@ -97,6 +97,12 @@ void ClapTrap::beRepaired(unsigned int amount)
 			  << " HP. Total HP: " << hit_points << ", EP left: " << energy_points << RESET << std::endl;
 }
 
+void ClapTrap::print() const
+{
+	std::cout << CLAP_TRAP_COLOR << "<<ClapTrap '" << name << "': HP: " << hit_points
+			  << ", EP: " << energy_points << ", AD: " << attack_damage << ">>" << RESET << std::endl;
+}
+
 // Getters
 std::string ClapTrap::get_name() const
 {

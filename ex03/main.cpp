@@ -4,6 +4,7 @@
 int main()
 {
 	DiamondTrap dt1("Diamond1");
+	dt1.print();
 	dt1.attack("Target1");
 	dt1.takeDamage(25);
 	dt1.beRepaired(10);
